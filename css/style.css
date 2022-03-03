@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+}
+.recherche{
+  padding: 0px 0px;
+    margin-top: 30px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
