@@ -1,0 +1,22 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 3 oc",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raed-source/p3-ohmyfood.git"
+  },
+  "author": "raed ABBAS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raed-source/p3-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/raed-source/p3-ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
