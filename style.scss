@@ -1,12 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+* {
     margin: 0;
-    padding: 0;  
-    box-sizing: border-box; 
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+// variables----------
+    $prim:#9356DC;
+    $sec:#FF79DA;
+    $ter:#99E2D0;
+
+header {
     font-family: "shrikhand";
     text-align: center;
     box-shadow: 0px -5px 11px 1px;
+}
+.emp {
+    text-align: center;
+    padding: 20px 50px;
+    background-color: azure;
+    input {
+        color: red;
+    }
+    h2, p{
+        padding: 10px 10px;
+    }
+    .exp{
+        background-image:linear-gradient($sec,rgb(141, 45, 117));
+        border-radius: 20px;
+        font-size: large;
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        transform:scale(1);
+        :hover{
+            transform: scale(1);
+        }
+    }
+   
+}
+.fonc{
+    ol{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    li{
+       
+        justify-content:start;
+        align-items: flex-start;
+        padding: 20px 10px;
+        min-width: 200px;
+        background-color: #f6f6f6;;
+        height: 50px;
+        border-radius: 20px;
+        margin: 10px 10px;
+        div{
+            margin: 10px 10px;
+        }
+    }
+    .num{
+        
+    }
+ 
+}
+.restos{
+    background-color: #f6f6f6;
+    margin: 0px auto;
+    margin: 0px auto;
+    .image{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 8px solid white;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow:2px 2px 2px 2px rgb(240, 234, 234);
+        img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        }
+        
+    }
+    .coeur{
+        background: #fff;
+        width: 200px;
+        border-radius: 5px;
+        .fa-solid{
+            position: relative;
+            float: right;
+            margin: -5px -82px;
+        }
+    }
+}
+.footer{
+    
+    background-color: rgb(68, 66, 66);
+    color: white;
+    a{
+       color: white;
+        text-decoration: none;
+    }
 }

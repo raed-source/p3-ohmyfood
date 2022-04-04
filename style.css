@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +13,119 @@ header {
   text-align: center;
   -webkit-box-shadow: 0px -5px 11px 1px;
           box-shadow: 0px -5px 11px 1px;
+}
+
+.emp {
+  text-align: center;
+  padding: 20px 50px;
+  background-color: azure;
+}
+
+.emp input {
+  color: red;
+}
+
+.emp h2, .emp p {
+  padding: 10px 10px;
+}
+
+.emp .exp {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#8d2d75));
+  background-image: linear-gradient(#FF79DA, #8d2d75);
+  border-radius: 20px;
+  font-size: large;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.emp .exp :hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.fonc ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px;
+}
+
+.fonc li {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px 10px;
+  min-width: 200px;
+  background-color: #f6f6f6;
+  height: 50px;
+  border-radius: 20px;
+  margin: 10px 10px;
+}
+
+.fonc li div {
+  margin: 10px 10px;
+}
+
+.restos {
+  background-color: #f6f6f6;
+  margin: 0px auto;
+  margin: 0px auto;
+}
+
+.restos .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  border: 8px solid white;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 2px 2px 2px #f0eaea;
+          box-shadow: 2px 2px 2px 2px #f0eaea;
+}
+
+.restos .image img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restos .coeur {
+  background: #fff;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.restos .coeur .fa-solid {
+  position: relative;
+  float: right;
+  margin: -5px -82px;
+}
+
+.footer {
+  background-color: #444242;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
