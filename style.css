@@ -6,10 +6,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "roboto", ans serif;
 }
 
 header {
-  font-family: "shrikhand";
   text-align: center;
   -webkit-box-shadow: 0px -5px 11px 1px;
           box-shadow: 0px -5px 11px 1px;
@@ -23,37 +23,31 @@ header {
 
 .emp input {
   color: #211515;
+  border: none;
+  width: 100%;
+  height: 30px;
+  background: gray;
 }
 
-.emp h2, .emp p {
+.emp h2,
+.emp p {
   padding: 10px 10px;
 }
 
 .emp .exp {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#992c2e));
-  background-image: linear-gradient(#FF79DA, #992c2e);
   border-radius: 20px;
-  font-size: large;
   color: white;
   border: none;
   padding: 10px 10px;
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-box-shadow: 2px 1px 8px 3px;
+          box-shadow: 2px 1px 8px 3px;
 }
 
 .emp .exp :hover {
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .main a {
@@ -65,20 +59,18 @@ header {
 }
 
 .fonc .fonc_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 10px 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 1px solid black;
 }
 
 .fonc .fonc_list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
-  text-align: start;
   padding: 20px 0px;
   width: 300px;
   border-radius: 20px;
@@ -92,7 +84,7 @@ header {
   text-align: center;
   position: absolute;
   margin-right: 0px;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .fonc .fonc_list li i.fa-solid {
@@ -143,8 +135,15 @@ header {
 }
 
 .footer {
+  text-align: center;
   background-color: #444242;
+  width: 300px;
   color: white;
+  margin: 0 auto;
+}
+
+.footer li {
+  list-style: none;
 }
 
 .footer a {
