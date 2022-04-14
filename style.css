@@ -67,15 +67,18 @@ header h1 {
   color: white;
   border: none;
   padding: 1.2rem 1.2rem;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-box-shadow: 0.2rem 0.2rem 0.8rem #888888;
           box-shadow: 0.2rem 0.2rem 0.8rem #888888;
 }
 
 .presenter .exp :hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0.9;
 }
 
 .main {
@@ -208,6 +211,15 @@ header h1 {
   height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform .1s .1s;
+  transition: -webkit-transform .1s .1s;
+  transition: transform .1s .1s;
+  transition: transform .1s .1s, -webkit-transform .1s .1s;
+}
+
+.resto .resto_image .image img:hover {
+  -webkit-transform: scale(1, 1) rotate(1deg);
+          transform: scale(1, 1) rotate(1deg);
 }
 
 .resto .resto_image .image .coeur {
@@ -226,8 +238,13 @@ header h1 {
   position: relative;
   float: right;
   margin: -50px 30px;
-  -webkit-transform: translatey(50%);
-          transform: translatey(50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.resto .resto_image .image .coeur:hover .far {
+  -webkit-transform: translateY(50%) scale(1.2);
+          transform: translateY(50%) scale(1.2);
 }
 
 .resto .footer {
