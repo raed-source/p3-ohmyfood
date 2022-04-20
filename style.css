@@ -162,8 +162,12 @@ header h1 {
   color: #9356dc;
 }
 
-.resto .resto_image {
+.resto {
   background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+.resto .resto_image {
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +178,7 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1em;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .resto .resto_image .image {
@@ -192,18 +196,18 @@ header h1 {
   -webkit-box-shadow: 2px 2px 2px 2px #f0eaea;
           box-shadow: 2px 2px 2px 2px #f0eaea;
   width: 50em;
+  position: relative;
 }
 
 .resto .resto_image .image .nouveau {
-  position: relative;
-  top: -11em;
-  left: 17em;
-  background-color: gray;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 2em;
-  padding: 0.3em;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #99e2d0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.4em 1rem;
+  color: #169375;
 }
 
 .resto .resto_image .image img {
@@ -211,56 +215,112 @@ header h1 {
   height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform .1s .1s;
-  transition: -webkit-transform .1s .1s;
-  transition: transform .1s .1s;
-  transition: transform .1s .1s, -webkit-transform .1s .1s;
 }
 
-.resto .resto_image .image img:hover {
-  -webkit-transform: scale(1, 1) rotate(1deg);
-          transform: scale(1, 1) rotate(1deg);
-}
-
-.resto .resto_image .image .coeur {
+.resto .resto_image .image .bas {
   background: #fff;
   border-radius: 5px;
   font-size: 1.5em;
   padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.resto .resto_image .image .coeur h3 {
-  padding-bottom: 0.5em;
+.resto .resto_image .image .bas .description h3 {
+  margin: 1rem 0 0 0;
 }
 
-.resto .resto_image .image .coeur .far {
-  font-size: 2em;
+.resto .resto_image .image .bas .description p {
+  margin: 0 0 1rem 0;
+  font-weight: 300;
+}
+
+.resto .resto_image .image .bas .coeur {
+  width: 3rem;
+  height: 3rem;
   position: relative;
-  float: right;
-  margin: -50px 30px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-mask-image: url("./images/assets/heart-solid.svg");
+  mask-image: url("./images/assets/heart-solid.svg");
 }
 
-.resto .resto_image .image .coeur:hover .far {
-  -webkit-transform: translateY(50%) scale(1.2);
-          transform: translateY(50%) scale(1.2);
+.resto .resto_image .image .bas .coeur::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("./images/assets/heart-regular.svg");
 }
 
-.resto .footer {
-  text-align: center;
+.resto .resto_image .image .bas .coeur::after {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a75ddb));
+  background-image: linear-gradient(#e872da, #a75ddb);
+  -webkit-transition: bottom 0.2s linear;
+  transition: bottom 0.2s linear;
+}
+
+.resto .resto_image .image .bas .coeur:hover::after {
+  bottom: 0;
+}
+
+footer {
   background-color: #444242;
-  width: 300px;
+  padding: 1rem 1rem 1.5rem;
   color: white;
-  margin: 0 auto;
 }
 
-.resto .footer li {
+footer h3 {
+  margin: 0;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 
-.resto .footer a {
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  font-size: 1.3rem;
   color: white;
   text-decoration: none;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+}
+
+main .one {
+  width: 50%;
+}
+
+main .two {
+  width: 33.33%;
+}
+
+main .three {
+  width: 25%;
 }
 /*# sourceMappingURL=style.css.map */
