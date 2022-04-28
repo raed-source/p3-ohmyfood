@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
-
+@import "menu";
 html {
   font-size: 62.5% !important;
 }
@@ -183,38 +183,39 @@ header {
             font-weight: 300;
           }
         }
-        .coeur {
-          width: 3rem;
-          height: 3rem;
-          position: relative;
-          -webkit-mask-image: url("./images/assets/heart-solid.svg");
-          mask-image: url("./images/assets/heart-solid.svg");
-          &::before {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-            background-image: url("./images/assets/heart-regular.svg");
-          }
-
-          &::after {
-            position: absolute;
-            bottom: -100%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-            background-image: linear-gradient($sec, $ter);
-            transition: bottom 0.2s linear;
-          }
-          &:hover::after {
-            bottom: 0;
-          }
-        }
       }
     }
+  }
+}
+
+.coeur {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  -webkit-mask-image: url("./images/assets/heart-solid.svg");
+  mask-image: url("./images/assets/heart-solid.svg");
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("./images/assets/heart-regular.svg");
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: linear-gradient($sec, $ter);
+    transition: bottom 0.2s linear;
+  }
+  &:hover::after {
+    bottom: 0;
   }
 }
 
@@ -250,17 +251,3 @@ footer {
 //     flex-direction: column;
 //   }
 // }
-
-///////////////////////////
-main {
-  display: grid;
-  .one {
-    width: 50%;
-  }
-  .two {
-    width: 33.33%;
-  }
-  .three {
-    width: 25%;
-  }
-}
