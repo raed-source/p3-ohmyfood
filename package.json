@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/raed-source/p3-ohmyfood#readme",
   "dependencies": {
-    "sass": "^1.49.9"
+    "sass": "^1.52.1"
   }
 }
